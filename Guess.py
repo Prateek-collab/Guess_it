@@ -1,17 +1,17 @@
 import random 
 jackpot=random.randint(1,100)
 
-guess=int(input("chal guess kar"))
+guess=int(input("Guess Again"))
 counter=1
 
 while guess!=jackpot:
                 counter+=1
                 if guess>jackpot:
-                                print("guess lower")
-                                guess=int(input("chal guess kar"))
+                                print("You are close.Guess lower.")
+                                guess=int(input("Guess Again"))
 
                 else:
-                                print("guess higher")
-                                guess=int(input("chal guess kar"))
+                                print("You are close.Guess higher.")
+                                guess=int(input("Guess Again"))
 
-print("yay! tum jeet gaye")
+print("Bingo!")
